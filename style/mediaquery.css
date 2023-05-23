@@ -1,0 +1,164 @@
+/* 
+  320px — 480px: dispositivos móveis
+  481px — 768px: iPads, tablets
+  769px — 1024px: telas pequenas, laptops
+  1025px — 1200px: desktops, telas grandes- Site Criado com essas medidas
+  1201px e acima —  telas muito grandes, TVs
+*/
+
+@media screen and (min-width: 1024px){
+    .new-list-item{
+        display: none;
+        list-style: none;
+    }
+
+    .new-item{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1700px) {
+    
+    #remover-tela-grande{
+        display: none;
+    }
+
+    footer{
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .new-list-item{
+        display: none;
+        list-style: none;
+    }
+
+    .new-item{
+        display: none;
+    }
+    
+    #remover{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .header{
+        justify-content: space-between;
+        
+    }
+    
+    #burguer{
+        display: block;
+    }
+
+    header .list-item{
+        display: none;
+    }
+
+    .new-list-item{
+        display: none;
+        padding: 20px;
+        list-style: none;
+    }
+
+    .new-item{
+        display: block;
+        color: #dc3545;
+        padding: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        background-color: rgba(128, 128, 128, 0.141);
+        border-radius: 10px;
+        animation: desceSecao .5s ease-in-out forwards;
+    }
+
+    .new-item:hover{
+        background-color: #dc3545;
+        color: white;
+    }
+
+    #remover{
+        display: none;
+    }
+
+    #remover3{
+        display: none;
+    }
+
+    .bloco > p{
+        font-size: 1.2rem;
+    }
+
+    .preco, .status, .tipo{
+        font-size: 16px;
+    }
+
+    .preco{
+        bottom: 115px;
+    }
+
+    footer > p{
+        font-size: 20px;
+    }
+} 
+
+@media screen and (max-width: 768px){
+    
+    .bloco > p{
+        font-size: 1rem;
+    }
+
+    .preco{
+        bottom: 125px;
+    }
+
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
+@media screen and (max-width: 675px){
+    #remover2{
+        display: none;
+    }
+
+    .bloco > p{
+        font-size: 1.2rem;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+    
+} 
+
+@media screen and (max-width: 504px){
+    .titulo > h1{
+        font-size: 1.5em;
+    }
+
+    .form1 > label{
+        margin-bottom: 10px;
+    }
+
+    .form2 > label{
+        margin-bottom: 15px;
+    }
+
+    .form3 > label{
+        margin-bottom: 10px;
+    }
+}
+

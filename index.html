@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mediaquery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Imóvel</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+            <div class="header">
+                <img src="img/valen-logo.png" alt="logo">
+                
+                <nav class="nav-bar">
+                    <ul class="list-item">
+                        <li><a class="item" href="#">Home</a></li>
+                        <li><a class="item" href="#">Sobre</a></li>
+                        <li><a class="item" href="#">Contato</a></li>
+                        <li><a class="item" href="#">Área do Cliente</a></li>
+                    </ul>
+                    <span id="burguer" class="material-symbols-outlined burguer">
+                        density_medium
+                    </span>
+                </nav>
+            </div>
+
+            <div>
+                <nav class="new-nav-bar">
+                    <ul class="new-list-item">
+                        <li><a class="new-item" href="#">Home</a></li>
+                        <li><a class="new-item" href="#">Sobre</a></li>
+                        <li><a class="new-item" href="#">Contato</a></li>
+                        <li><a class="new-item" href="#">Área do Cliente</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header> 
+
+    <div class="container">
+        
+        <section class="apresentacao">
+            <div class="titulo">
+                <h1>Conheça a Valen</h1>
+                <span class="material-symbols-outlined abrir-conteudo" >
+                    expand_more
+                </span>
+            </div>
+                <p class="mostrar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus, neque fuga dignissimos soluta eius optio enim iure error molestiae, aspernatur ratione, consequuntur rerum. Beatae ipsa magnam corrupti iure esse?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere eius qui earum eveniet ex quia eos. Eligendi pariatur explicabo amet atque temporibus a minima neque asperiores architecto, libero aliquam non!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente libero non quos? Sapiente, magnam voluptates itaque, vel nisi necessitatibus ratione tenetur obcaecati perferendis ad reiciendis similique vero, placeat delectus? Veniam!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nam consequuntur ab, explicabo hic incidunt veniam est voluptatum odit minima ullam natus, minus sint tenetur neque et. Expedita, sunt aut.</p>
+        </section>
+        
+
+        <section class="destaque">
+            <div class="titulo">
+                <h1>Destaques</h1>
+                <span class="material-symbols-outlined abrir-destaque">
+                    expand_more
+                </span>
+            </div>
+
+
+            <div class="mostrar-destaque">
+                <div class="container-flex-box">
+                    <div class="bloco">
+                        <img id="mudar-foto" onmouseover="mudarFoto()" onmouseout="voltarFoto()" src="img/casa1.jpg" alt="casa">
+                        <p>Albinópolis - Conselheiro Lafaiete</p>
+                        <div class="tipo">
+                            Casa
+                        </div>
+                        <div class="status">
+                            Venda
+                        </div>
+                        <!-- <div class="preco">
+                            R$ 500.000,00
+                        </div> -->
+                    </div>
+                    <div id="remover-tela-grande" class="bloco">
+                        <img src="img/casa2.jpg" alt="casa">
+                        <p>Albinópolis - Conselheiro Lafaiete</p>
+                        <div class="tipo">
+                            Casa
+                        </div>
+                        <div class="status">
+                            Venda
+                        </div>
+                        <!-- <div class="preco">
+                            R$ 500.000,00
+                        </div> -->
+                    </div>
+                    <div id="remover2" class="bloco">
+                        <img src="img/casa2.jpg" alt="casa">
+                        <p>Albinópolis - Conselheiro Lafaiete</p>
+                        <div class="tipo">
+                            Casa
+                        </div>
+                        <div class="status">
+                            Aluguel
+                        </div>
+                        <!-- <div class="preco">
+                            R$ 500.000,00
+                        </div> -->
+                    </div>
+                
+                    <div id="remover" class="bloco">
+                        <img src="img/casa3.jpg" alt="casa">
+                        <p>Albinópolis - Conselheiro Lafaiete</p>
+                        <div class="tipo">
+                            Casa
+                        </div>
+                        <div class="status">
+                            Aluguel
+                        </div>
+                        <!-- <div class="preco">
+                            R$ 500.000,00
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        
+        <section class="pesquisa">
+            <div class="titulo">
+                <h1>Descubra o Imóvel ideal para você!</h1>
+                <span class="material-symbols-outlined abrir-destaque" onclick="showForm()">
+                    expand_more
+                </span>
+            </div>
+            
+            <div class="formulario">
+                <form action="cadastro.js" method="get" >
+                   
+                    <div class="form1">
+                        <h4> Atualmente você: </h4>
+        
+                        <label for="iopcao"> <input type="radio" name="opcao" id="iopcao"> Já tem casa propria</label>
+                        <label for="iopcao2"><input type="radio" name="opcao" id="iopcao2"> Mora de aluguel </label>
+                        <label for="iopcao3"><input type="radio" name="opcao" id="iopcao3"> Não tem casa própria e nao tem vontade de investir nisso no momento. </label>
+
+                    </div>
+
+                    <div class="form2">
+                        <h4> Seu imóvel dos sonhos tem:</h4>
+
+                        <label for="iopcao4"><input type="radio" name="opcao" id="iopcao4"> 1 quarto, sala, banheiro, cozinha integrada com área de serviço.</label>
+                        <label for="iopcao5"><input type="radio" name="opcao" id="iopcao5"> 2 quartos, sala, cozinha, copa, banheiro, área de serviço.</label>
+                        <label for="iopcao6"><input type="radio" name="opcao" id="iopcao6"> 2 quartos, 1 quarto com suíte, sala, cozinha, copa, banheiro, área de serviço, área gourmet </label>
+                    </div>
+
+                    <div class="form3">
+                        <h4> Você deseja ter um imóvel que te proporciona:  </h4>
+
+                        <label for="iopcao7"><input type="radio" name="opcao" id="iopcao7"> Praticidade e fácil manutenção.</label>
+                        <label for="iopcao8"><input type="radio" name="opcao" id="iopcao8"> Conforto e aconchego.</label>
+                        <label for="iopcao9"><input type="radio" name="opcao" id="iopcao9"> Ambiente e espaços modernos. </label>
+                    </div>
+                    
+                    <input type="submit" value="Pesquisar">
+                </form>
+               
+            </div>
+        </section>
+
+    
+
+        <footer>
+            <img src="img/valen-logo.png" alt="logo">
+
+            <p>O MELHOR INVESTIMENTO DA SUA VIDA ESTÁ AQUI!</p>
+            <a href="#">ENTRE EM CONTATO</a>
+        </footer>  
+          
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
