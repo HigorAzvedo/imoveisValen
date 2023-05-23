@@ -284,7 +284,6 @@ input[type=submit]{
     font-size: 20px;
     cursor: pointer;
     display: block;
-
     margin: 0 auto;
 }
 
@@ -337,18 +336,18 @@ footer > a:hover{
 
 @keyframes desceSecao{
 
-    from{
+    0%{
         transition: .5s;
-        transform: translate3d(0, -5px, 0px);
+        transform: translate3d(0, -20px, 0px);
     }
-    to{transform: translate3d(0, 0, 0);}
+    100%{transform: translate3d(0, 0, 0);}
 
 }
 
 @keyframes sobeSecao{
 
     from{
-        transition: .5s;
+        transition: .7s;
         transform: translate3d(0, 20px, 0px);
     }
     to{
