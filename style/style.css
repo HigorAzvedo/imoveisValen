@@ -137,17 +137,19 @@ section > .titulo{
 
 .container-flex-box{
     width: 98%;
+    position: relative;
     margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
     background-color:rgba(128, 128, 128, 0.141) ;
     border-radius: 0px 0px 5px 5px;
     animation: desceSecao .5s ease-in-out forwards;
 }
 
 .container-flex-box > .bloco{
+    
     font-size: 1.2rem;
     margin-right: 10px;
     cursor: pointer;
@@ -209,7 +211,7 @@ section > .titulo{
     bottom: 110px;
     right: 10px;
 } */
- 
+
 
 /*--------------- SECTION PESQUISA ---------------*/
 
@@ -234,7 +236,7 @@ h4{
     margin: 10px;
 }
 
-form > .form1, .form2, .form3{
+.form > .cadastros, .form0, .form1, .form2, .form3{
     display: flex;
     flex-direction: column;
     min-width: 90%;
@@ -243,8 +245,50 @@ form > .form1, .form2, .form3{
     padding: 20px;
 }
 
-.form1{
+.cadastros{
     border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.cadastros > label {
+    padding: 5px;
+}
+
+.cadastros > input[type="text"], input[type="email"], input[type="number"]{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 50%;
+    
+}
+
+.cadastros > input[type="text"]:hover, input[type="email"]:hover, input[type="number"]:hover{
+    border-color: #dc3545;
+}
+
+.cadastros > input[type="text"]:focus, input[type="email"]:focus, input[type="date"]:focus{
+   color: #dc3545;
+}
+
+
+
+
+.form0{
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.form0 > label{
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.form1{
+    /* border: 2px solid black; */
     padding: 20px;
     margin-bottom: 30px;
 }
@@ -284,6 +328,7 @@ input[type=submit]{
     font-size: 20px;
     cursor: pointer;
     display: block;
+
     margin: 0 auto;
 }
 
@@ -297,20 +342,22 @@ footer{
     background-color: rgba(128, 128, 128, 0.141);
     width: 100vw;
     color: black;
-    padding: 20px;
+    padding: 15px;
     margin-top: 100px;
-    font-size: 2em;
+    font-size: 1.7em;
     display: flex;
     justify-content: space-between;
     align-items:center ;
 }
 
 footer > img{
-    width: 120px;
+    width: 100px;
 }
 
 footer > p{
-    max-width: 400px;
+    font-size: 2rem;
+    font-weight: 600;
+    max-width: 200px;
     text-align: center;
 }
 
@@ -336,18 +383,18 @@ footer > a:hover{
 
 @keyframes desceSecao{
 
-    0%{
+    from{
         transition: .5s;
-        transform: translate3d(0, -20px, 0px);
+        transform: translate3d(0, -5px, 0px);
     }
-    100%{transform: translate3d(0, 0, 0);}
+    to{transform: translate3d(0, 0, 0);}
 
 }
 
 @keyframes sobeSecao{
 
     from{
-        transition: .7s;
+        transition: .5s;
         transform: translate3d(0, 20px, 0px);
     }
     to{

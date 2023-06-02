@@ -6,23 +6,23 @@ const listItem = document.querySelector('.new-list-item')
 menu.addEventListener('click', showMenu)
 
 
-function showMenu(){
-    if(listItem.style.display == 'none'){
+function showMenu() {
+    if (listItem.style.display == 'none') {
         listItem.style.display = 'block'
-    }else{
+    } else {
         listItem.style.display = 'none'
     }
 }
 
-function mudouTamanho(){
-    if(window.innerWidth >= 850){
+function mudouTamanho() {
+    if (window.innerWidth >= 850) {
         listItem.style.display = 'block'
-    }else{
+    } else {
         listItem.style.display = 'none'
     }
 }
 
-/* JavaScript para mostrar o conteudo */ 
+/* JavaScript para mostrar o conteudo */
 
 const openContent = document.querySelector(".abrir-conteudo")
 const show = document.querySelector(".mostrar")
@@ -30,13 +30,13 @@ const form = document.querySelector('.formulario')
 
 openContent.addEventListener('click', showContent)
 
-function showContent(){
-    if(show.style.display == 'none'){
+function showContent() {
+    if (show.style.display == 'none') {
         show.style.display = 'block'
-    }else{
+    } else {
         show.style.display = 'none'
     }
-    
+
 }
 
 const openEmphasis = document.querySelector(".abrir-destaque")
@@ -44,38 +44,38 @@ const emphasis = document.querySelector(".mostrar-destaque")
 
 openEmphasis.addEventListener('click', showEmphasis)
 
-function showEmphasis(){
-    if(emphasis.style.display == 'none'){
+function showEmphasis() {
+    if (emphasis.style.display == 'none') {
         emphasis.style.display = 'block'
-    }else{
+    } else {
         emphasis.style.display = 'none'
     }
 }
 
-function showForm(){
-    if(form.style.display == 'none'){
+function showForm() {
+    if (form.style.display == 'none') {
         form.style.display = 'block'
-    }else{
+    } else {
         form.style.display = 'none'
     }
 }
 
 
-/* Mudar a foto */ 
-function mudarFoto(){
+/* Mudar a foto */
+function mudarFoto() {
     let foto = document.querySelector("#mudar-foto")
 
-    setTimeout(()=>{
+    setTimeout(() => {
         foto.src = "img/casa4.jpg"
-    },1000)
-    
+    }, 1000)
+
 }
 
-function voltarFoto(){
+function voltarFoto() {
     let foto = document.querySelector("#mudar-foto")
 
-    setTimeout(()=>{
-        foto.src = "img/casa1.jpg" 
-    },1000)
-    
+    setTimeout(() => {
+        foto.src = "img/casa1.jpg"
+    }, 1000)
+
 }

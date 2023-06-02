@@ -1,59 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/mediaquery.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Imóvel</title>
 </head>
+
 <body onresize="mudouTamanho()">
     <header>
-            <div class="header">
-                <img src="img/valen-logo.png" alt="logo">
-                
-                <nav class="nav-bar">
-                    <ul class="list-item">
-                        <li><a class="item" href="#">Home</a></li>
-                        <li><a class="item" href="#">Sobre</a></li>
-                        <li><a class="item" href="#">Contato</a></li>
-                        <li><a class="item" href="#">Área do Cliente</a></li>
-                    </ul>
-                    <span id="burguer" class="material-symbols-outlined burguer">
-                        density_medium
-                    </span>
-                </nav>
-            </div>
+        <div class="header">
+            <img src="img/valen-logo.png" alt="logo">
 
-            <div>
-                <nav class="new-nav-bar">
-                    <ul class="new-list-item">
-                        <li><a class="new-item" href="#">Home</a></li>
-                        <li><a class="new-item" href="#">Sobre</a></li>
-                        <li><a class="new-item" href="#">Contato</a></li>
-                        <li><a class="new-item" href="#">Área do Cliente</a></li>
-                    </ul>
-                </nav>
-            </div>
-    </header> 
+            <nav class="nav-bar">
+                <ul class="list-item">
+                    <li><a class="item" href="">Home</a></li>
+                    <li><a class="item" href="#">Sobre</a></li>
+                    <li><a class="item" href="#">Contato</a></li>
+                    <li><a class="item" href="#">Área do Cliente</a></li>
+                </ul>
+                <span id="burguer" class="material-symbols-outlined burguer">
+                    density_medium
+                </span>
+            </nav>
+        </div>
+
+        <div>
+            <nav class="new-nav-bar">
+                <ul class="new-list-item">
+                    <li><a class="new-item" href="#">Home</a></li>
+                    <li><a class="new-item" href="#">Sobre</a></li>
+                    <li><a class="new-item" href="#">Contato</a></li>
+                    <li><a class="new-item" href="#">Área do Cliente</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <div class="container">
-        
+
         <section class="apresentacao">
             <div class="titulo">
-                <h1>Conheça a Valen</h1>
-                <span class="material-symbols-outlined abrir-conteudo" >
+                <h1>Conheça a VALEN - Realize seus Sonhos Imobiliários!</h1>
+                <span class="material-symbols-outlined abrir-conteudo">
                     expand_more
                 </span>
             </div>
-                <p class="mostrar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus, neque fuga dignissimos soluta eius optio enim iure error molestiae, aspernatur ratione, consequuntur rerum. Beatae ipsa magnam corrupti iure esse?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere eius qui earum eveniet ex quia eos. Eligendi pariatur explicabo amet atque temporibus a minima neque asperiores architecto, libero aliquam non!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente libero non quos? Sapiente, magnam voluptates itaque, vel nisi necessitatibus ratione tenetur obcaecati perferendis ad reiciendis similique vero, placeat delectus? Veniam!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nam consequuntur ab, explicabo hic incidunt veniam est voluptatum odit minima ullam natus, minus sint tenetur neque et. Expedita, sunt aut.</p>
+            <p class="mostrar">Bem-vindo(a) à VALEN Imobiliária, a sua parceira confiável para encontrar o lar dos seus
+                sonhos! Nós entendemos que a busca por um imóvel é uma jornada única e queremos estar ao seu lado em
+                cada etapa desse processo emocionante. <br> <br>
+
+                Com uma equipe experiente e altamente qualificada,estamos prontos para oferecer a você um atendimento
+                personalizado e direcionado às suas necessidades.Nossa abordagem centrada no cliente é o que nos
+                diferencia. Queremos conhecer você, entender seusdesejos e encontrar a propriedade perfeita que se
+                encaixe com seu estilo de vida e orçamento. <br> <br>
+
+
+                Na VALEN, oferecemos uma ampla gama de opções, desde casas acolhedoras até apartamentos modernos e
+                terrenos promissores. Além disso, investimos em fotos e vídeos de alta qualidade que destacam as
+                características únicas de cada imóvel que temos a oferecer. <br> <br>
+
+                Nossa análise de dados especializada nos permite fornecer soluções de financiamento personalizadas, com
+                preços competitivos e condições flexíveis. Estamos comprometidos em superar suas expectativas e garantir
+                que você tenha uma experiência excepcional durante toda a jornada. <br> <br>
+
+                Venha nos conhecer e descubra por que a VALEN é a escolha certa para realizar seus sonhos imobiliários.
+                Estamos ansiosos para ajudá-lo(a) a encontrar o lugar perfeito que você chamará de lar.</p>
+
         </section>
-        
+
 
         <section class="destaque">
             <div class="titulo">
@@ -66,8 +86,10 @@
 
             <div class="mostrar-destaque">
                 <div class="container-flex-box">
+
                     <div class="bloco">
-                        <img id="mudar-foto" onmouseover="mudarFoto()" onmouseout="voltarFoto()" src="img/casa1.jpg" alt="casa">
+                        <img id="mudar-foto" onmouseover="mudarFoto()" onmouseout="voltarFoto()" src="img/casa1.jpg"
+                            alt="casa">
                         <p>Albinópolis - Conselheiro Lafaiete</p>
                         <div class="tipo">
                             Casa
@@ -105,7 +127,7 @@
                             R$ 500.000,00
                         </div> -->
                     </div>
-                
+
                     <div id="remover" class="bloco">
                         <img src="img/casa3.jpg" alt="casa">
                         <p>Albinópolis - Conselheiro Lafaiete</p>
@@ -119,11 +141,15 @@
                             R$ 500.000,00
                         </div> -->
                     </div>
+
+                    <!-- <span id="right-btn" class="material-symbols-outlined next-btn">
+                        arrow_forward_ios
+                        </span> -->
                 </div>
             </div>
-        
+
         </section>
-        
+
         <section class="pesquisa">
             <div class="titulo">
                 <h1>Descubra o Imóvel ideal para você!</h1>
@@ -131,52 +157,87 @@
                     expand_more
                 </span>
             </div>
-            
-            <div class="formulario">
-                <form action="cadastro.js" method="get" >
-                   
-                    <div class="form1">
-                        <h4> Atualmente você: </h4>
-        
-                        <label for="iopcao"> <input type="radio" name="opcao" id="iopcao"> Já tem casa propria</label>
-                        <label for="iopcao2"><input type="radio" name="opcao" id="iopcao2"> Mora de aluguel </label>
-                        <label for="iopcao3"><input type="radio" name="opcao" id="iopcao3"> Não tem casa própria e nao tem vontade de investir nisso no momento. </label>
 
+            <div class="formulario">
+
+                <form target="_blank" action="https://api.sheetmonkey.io/form/8ht1DZojTFADomgu61H93n" method="post">
+
+
+                    <div class="cadastros">
+                        <h4>Cadastro: </h4>
+                        <input type="text" name="nome" id="inome" placeholder="Nome">
+                        <input type="email" name="email" id="iemail" placeholder="e-mail">
+                        <input type="number" name="idade" id="iidade" placeholder="Idade">
                     </div>
+
+
+
+                    <div class="form0">
+                        <h4> Interesse: </h4>
+                        <label for="iopcao"> <input type="radio" name="interesse" id="iopcao" value="Locação"> Locação</label>
+                        <label for="iopcao2"><input type="radio" name="interesse" id="iopcao2" value="Compra"> Compra </label>
+                    </div>
+
+
+
+                    <div class="form1">
+                        <h4> Tipo: </h4>
+                        <label for="iopcao3"> <input type="radio" name="tipo" id="iopcao3" value="Apartamento"> Apartamento</label>
+                        <label for="iopcao4"><input type="radio" name="tipo" id="iopcao4" value="Casa"> Casa </label>
+                        <label for="iopcao5"><input type="radio" name="tipo" id="iopcao5" value="Lote"> Lote </label>
+                    </div>
+
+
 
                     <div class="form2">
                         <h4> Seu imóvel dos sonhos tem:</h4>
-
-                        <label for="iopcao4"><input type="radio" name="opcao" id="iopcao4"> 1 quarto, sala, banheiro, cozinha integrada com área de serviço.</label>
-                        <label for="iopcao5"><input type="radio" name="opcao" id="iopcao5"> 2 quartos, sala, cozinha, copa, banheiro, área de serviço.</label>
-                        <label for="iopcao6"><input type="radio" name="opcao" id="iopcao6"> 2 quartos, 1 quarto com suíte, sala, cozinha, copa, banheiro, área de serviço, área gourmet </label>
+                        <label for="iopcao6"><input type="radio" name="desejo" id="iopcao6" value=" 1 quarto, sala, banheiro,
+                        cozinha integrada com área de serviço">
+                        quarto, sala, banheiro,
+                        cozinha integrada 
+                        com área de serviço.
+                        </label>
+                        <label for="iopcao7"><input type="radio" name="desejo" id="iopcao7" value="2 quartos, sala, cozinha,
+                        copa, banheiro, área de serviço."> 2 quartos, sala, cozinha, 
+                        copa, banheiro,
+                        área de serviço.</label>
+                        <label for="iopcao8"><input type="radio" name="desejo" id="iopcao8" value=" 2 quartos, 1 quarto com
+                        suíte, sala, cozinha, copa, banheiro, área de serviço, área gourmet."> 
+                        2 quartos, 1 quarto com
+                        suíte, sala, cozinha, copa, 
+                        banheiro, área de serviço, 
+                        área gourmet. </label>
                     </div>
+
+
 
                     <div class="form3">
-                        <h4> Você deseja ter um imóvel que te proporciona:  </h4>
-
-                        <label for="iopcao7"><input type="radio" name="opcao" id="iopcao7"> Praticidade e fácil manutenção.</label>
-                        <label for="iopcao8"><input type="radio" name="opcao" id="iopcao8"> Conforto e aconchego.</label>
-                        <label for="iopcao9"><input type="radio" name="opcao" id="iopcao9"> Ambiente e espaços modernos. </label>
+                        <h4> Você deseja ter um imóvel que te proporciona: </h4>
+                        <label for="iopcao9"><input type="radio" name="conforto" id="iopcao9" value="Praticidade e fácil
+                        manutenção."> Praticidade e fácil manutenção.</label>
+                        <label for="iopcao10"><input type="radio" name="conforto" id="iopcao10" value=" Conforto e
+                        aconchego."> Conforto e aconchego.</label>
+                        <label for="iopcao11"><input type="radio" name="conforto" id="iopcao11" value="Ambiente e espaços modernos."> Ambiente e espaços modernos.
+                        </label>
                     </div>
-                    
                     <input type="submit" value="Pesquisar">
                 </form>
-               
+
+                
+
             </div>
         </section>
-
-    
 
         <footer>
             <img src="img/valen-logo.png" alt="logo">
 
-            <p>O MELHOR INVESTIMENTO DA SUA VIDA ESTÁ AQUI!</p>
+            <p>Valorizando Sonhos!</p>
             <a href="#">ENTRE EM CONTATO</a>
-        </footer>  
-          
+        </footer>
+
     </div>
 
     <script src="script/script.js"></script>
 </body>
+
 </html>

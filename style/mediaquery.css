@@ -46,6 +46,7 @@
 @media screen and (max-width: 850px) {
     .header{
         justify-content: space-between;
+        
     }
     
     #burguer{
@@ -99,7 +100,8 @@
     }
 
     footer > p{
-        font-size: 20px;
+        font-size: 1.5rem;
+        font-weight: 600;
     }
 } 
 
@@ -145,7 +147,7 @@
 
 @media screen and (max-width: 504px){
     .titulo > h1{
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .form1 > label{
