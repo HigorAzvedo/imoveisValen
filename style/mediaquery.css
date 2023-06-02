@@ -11,6 +11,9 @@
         display: none;
         list-style: none;
     }
+    .apresentacao > p{
+        max-width: 1050px;
+    } 
 
     .new-item{
         display: none;
@@ -23,12 +26,22 @@
         display: none;
     }
 
+    
+
+    .cadastros > input[type="text"], input[type="email"], input[type="number"]{
+        width: 80%;
+    }
+
     footer{
         gap: 30px;
     }
 }
 
 @media screen and (max-width: 1024px){
+    .titulo > h1{
+        font-size: 20px;
+    }
+
     .new-list-item{
         display: none;
         list-style: none;
@@ -40,6 +53,10 @@
     
     #remover{
         display: none;
+    }
+
+    .cadastros > input[type="text"], input[type="email"], input[type="number"]{
+        width: 100%;
     }
 }
 
@@ -99,6 +116,10 @@
         bottom: 115px;
     }
 
+    .cadastros > input[type="text"], input[type="email"], input[type="number"]{
+        width: 100%;
+    }
+
     footer > p{
         font-size: 1.5rem;
         font-weight: 600;
@@ -121,6 +142,10 @@
         align-items: center;
         text-align: center;
         gap: 20px;
+    }
+
+    .cadastros > input[type="text"], input[type="email"], input[type="number"]{
+        width: 100%;
     }
 
     footer{
