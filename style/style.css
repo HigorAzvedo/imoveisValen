@@ -227,7 +227,6 @@ h4{
 }
 
 .form > .cadastros, .form0, .form1, .form2, .form3{
-    background-color: rgba(128, 128, 128, 0.141);
     display: flex;
     flex-direction: column;
     max-width: 70%;
@@ -238,7 +237,7 @@ h4{
 
 .cadastros{
     max-width: 70%;
-    background-color: rgba(128, 128, 128, 0.141);
+    background-color: rgba(128, 128, 128, 0.647);
     border-radius: 10px;
     padding: 20px;
     margin: auto;
@@ -272,7 +271,8 @@ h4{
     padding: 5px;
     margin-top: 20px;
     margin-bottom: 30px;
-    background-color: rgba(128, 128, 128, 0.141);
+    background-color: rgba(128, 128, 128, 0.647);
+
 }
 
 .form0 > label{
@@ -282,7 +282,7 @@ h4{
 }
 
 .form1{
-    background-color: rgba(128, 128, 128, 0.141);
+    background-color: rgba(128, 128, 128, 0.647);
     padding: 5px;
     margin-bottom: 30px;
 }
@@ -294,7 +294,7 @@ h4{
 }
 
 .form2{
-    background-color: rgba(128, 128, 128, 0.141);
+    background-color: rgba(128, 128, 128, 0.647);
     margin-bottom: 30px;
 }
 
@@ -305,7 +305,7 @@ h4{
 }
 
 .form3{
-    background-color: rgba(128, 128, 128, 0.141);
+    background-color: rgba(128, 128, 128, 0.647);
     margin-bottom: 20px;
 }
 
