@@ -149,7 +149,6 @@ section > .titulo{
 }
 
 .container-flex-box > .bloco{
-    
     font-size: 1.2rem;
     margin-right: 10px;
     cursor: pointer;
@@ -200,19 +199,6 @@ section > .titulo{
     left: 10px;
 }
 
-/* .preco{
-    background-color: rgba(0, 0, 0, 0.703);
-    color: white;
-    padding: 5px 10px;
-    font-weight: bold;
-    border-radius: 10px;
-    display: inline-block;
-    position: absolute;
-    bottom: 110px;
-    right: 10px;
-} */
-
-
 /*--------------- SECTION PESQUISA ---------------*/
 
 .pesquisa{
@@ -226,6 +212,10 @@ section > .titulo{
 }
 
 form{
+    max-width: 98%;
+    margin: auto;
+    background-color: rgba(128, 128, 128, 0.141);
+    border-radius: 0px 0px 5px 5px;
     font-size: 22px;
     padding: 20px;
     animation: desceSecao .5s ease-in-out forwards;
@@ -237,21 +227,21 @@ h4{
 }
 
 .form > .cadastros, .form0, .form1, .form2, .form3{
+    background-color: rgba(128, 128, 128, 0.141);
     display: flex;
     flex-direction: column;
-    max-width: 95%;
-    border: 2px solid black;
+    max-width: 70%;
+    margin: auto;
     border-radius: 10px;
     padding: 20px;
 }
 
 .cadastros{
-    max-width: 95%;
-    border: 2px solid black;
+    max-width: 70%;
+    background-color: rgba(128, 128, 128, 0.141);
     border-radius: 10px;
     padding: 20px;
-    margin-top: 5px;
-    margin-bottom: 30px;
+    margin: auto;
 }
 
 .cadastros > label {
@@ -262,7 +252,10 @@ h4{
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
-    width: 50%;
+    width: 100%;
+    border-top: none ;
+    border-left: none;
+    border-right: none;
     
 }
 
@@ -277,7 +270,9 @@ h4{
 
 .form0{
     padding: 5px;
+    margin-top: 20px;
     margin-bottom: 30px;
+    background-color: rgba(128, 128, 128, 0.141);
 }
 
 .form0 > label{
@@ -287,7 +282,7 @@ h4{
 }
 
 .form1{
-    /* border: 2px solid black; */
+    background-color: rgba(128, 128, 128, 0.141);
     padding: 5px;
     margin-bottom: 30px;
 }
@@ -299,6 +294,7 @@ h4{
 }
 
 .form2{
+    background-color: rgba(128, 128, 128, 0.141);
     margin-bottom: 30px;
 }
 
@@ -309,6 +305,7 @@ h4{
 }
 
 .form3{
+    background-color: rgba(128, 128, 128, 0.141);
     margin-bottom: 20px;
 }
 
@@ -319,7 +316,7 @@ h4{
 }
 
 input[type=submit]{
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     background-color: #dc3545;
     border-color: white;
@@ -327,7 +324,7 @@ input[type=submit]{
     font-size: 20px;
     cursor: pointer;
     display: block;
-
+    width: 200px;
     margin: 0 auto;
 }
 
