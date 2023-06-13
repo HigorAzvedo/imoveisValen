@@ -22,11 +22,28 @@ function mudouTamanho() {
     }
 }
 
+
+
+/* JavaScript para mostrar o conteudo atraves do header */
+
+let sobre = document.querySelector('#nav-bar-header')
+let areaDoCliente = document.querySelector('#nav-bar-form')
+sobre.addEventListener('click' , showContent)
+areaDoCliente.addEventListener('click', showForm)
+
+
+const newSobre = document.querySelector('#new-nav-bar-header')
+const newAreaDoCliente = document.querySelector('#new-nav-bar-form')
+newSobre.addEventListener('click' , showContent)
+newAreaDoCliente.addEventListener('click', showForm)
+
+
+
 /* JavaScript para mostrar o conteudo */
 
 const openContent = document.querySelector(".abrir-conteudo")
 const show = document.querySelector(".mostrar")
-const form = document.querySelector('.formulario')
+
 
 openContent.addEventListener('click', showContent)
 
@@ -51,6 +68,8 @@ function showEmphasis() {
         emphasis.style.display = 'none'
     }
 }
+
+const form = document.querySelector('.formulario')
 
 function showForm() {
     if (form.style.display == 'none') {

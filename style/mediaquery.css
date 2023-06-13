@@ -127,6 +127,10 @@
 } 
 
 @media screen and (max-width: 768px){
+
+    header{
+        width: 100vw;
+    }
     
     .bloco > p{
         font-size: 1rem;
@@ -171,6 +175,12 @@
 } 
 
 @media screen and (max-width: 504px){
+
+    .apresentacao > p{
+       height: 500px;
+       overflow-y: scroll;
+    }
+
     .titulo > h1{
         font-size: 1.3em;
     }
