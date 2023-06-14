@@ -26,8 +26,10 @@ function mudouTamanho() {
 
 /* JavaScript para mostrar o conteudo atraves do header */
 
+let home = document.querySelector('#new-nav-bar-home')
 let sobre = document.querySelector('#nav-bar-header')
 let areaDoCliente = document.querySelector('#nav-bar-form')
+home.addEventListener('click', showMenu )
 sobre.addEventListener('click' , showContent)
 areaDoCliente.addEventListener('click', showForm)
 
@@ -48,7 +50,7 @@ const show = document.querySelector(".mostrar")
 openContent.addEventListener('click', showContent)
 
 function showContent() {
-    if (show.style.display == 'none') {
+     if (show.style.display == 'none') {
         show.style.display = 'block'
     } else {
         show.style.display = 'none'
