@@ -1,27 +1,61 @@
 /* JavaScript para o header */
 
 const menu = document.querySelector('.burguer')
-const listItem = document.querySelector('.new-list-item')
+// const listItem = document.querySelector('.new-list-item')
 
 menu.addEventListener('click', showMenu)
 
 
 function showMenu() {
-    if (listItem.style.display == 'none') {
-        listItem.style.display = 'block'
+    if (newitens.style.display == 'block') {
+        newitens.style.display = 'none'
     } else {
-        listItem.style.display = 'none'
+        newitens.style.display = 'block'
     }
 }
 
-function mudouTamanho() {
-    if (window.innerWidth >= 850) {
-        listItem.style.display = 'block'
+// function mudouTamanho() {
+//     if (window.innerWidth >= 850) {
+//         listItem.style.display = 'block'
+//     } else {
+//         listItem.style.display = 'none'
+//     }
+// }
+
+
+/* JavaScript para mostrar o conteudo */
+
+const openContent = document.querySelector(".abrir-conteudo")
+// const show = document.querySelector(".mostrar")
+openContent.addEventListener('click', showContent)
+
+function showContent() {
+    if (show.style.display == 'block') {
+        show.style.display = 'none'
     } else {
-        listItem.style.display = 'none'
+        show.style.display = 'block'
     }
 }
 
+const openEmphasis = document.querySelector(".abrir-destaque")
+// const emphasis = document.querySelector(".mostrar-destaque")
+openEmphasis.addEventListener('click', showEmphasis)
+
+function showEmphasis() {
+    if (emphasis.style.display == 'block') {
+        emphasis.style.display = 'none'
+    } else {
+        emphasis.style.display = 'block'
+    }
+}
+
+function showForm() {
+    if (forms.style.display == 'block') {
+        forms.style.display = 'none'
+    } else {
+        forms.style.display = 'block'
+    }
+}
 
 
 /* JavaScript para mostrar o conteudo atraves do header */
@@ -29,58 +63,15 @@ function mudouTamanho() {
 let home = document.querySelector('#new-nav-bar-home')
 let sobre = document.querySelector('#nav-bar-header')
 let areaDoCliente = document.querySelector('#nav-bar-form')
-home.addEventListener('click', showMenu )
-sobre.addEventListener('click' , showContent)
-areaDoCliente.addEventListener('click', showForm)
 
+home.addEventListener('click', showMenu)
+sobre.addEventListener('click', showContent)
+areaDoCliente.addEventListener('click', showForm)
 
 const newSobre = document.querySelector('#new-nav-bar-header')
 const newAreaDoCliente = document.querySelector('#new-nav-bar-form')
-newSobre.addEventListener('click' , showContent)
+newSobre.addEventListener('click', showContent)
 newAreaDoCliente.addEventListener('click', showForm)
-
-
-
-/* JavaScript para mostrar o conteudo */
-
-const openContent = document.querySelector(".abrir-conteudo")
-const show = document.querySelector(".mostrar")
-
-
-openContent.addEventListener('click', showContent)
-
-function showContent() {
-     if (show.style.display == 'none') {
-        show.style.display = 'block'
-    } else {
-        show.style.display = 'none'
-    }
-
-}
-
-const openEmphasis = document.querySelector(".abrir-destaque")
-const emphasis = document.querySelector(".mostrar-destaque")
-
-openEmphasis.addEventListener('click', showEmphasis)
-
-function showEmphasis() {
-    if (emphasis.style.display == 'none') {
-        emphasis.style.display = 'block'
-    } else {
-        emphasis.style.display = 'none'
-    }
-}
-
-const form = document.querySelector('.formulario')
-
-function showForm() {
-    if (form.style.display == 'none') {
-        form.style.display = 'block'
-    } else {
-        form.style.display = 'none'
-    }
-}
-
 
 /* Mudar a foto */
 function mudarFoto() {

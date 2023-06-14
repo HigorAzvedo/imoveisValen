@@ -15,6 +15,7 @@ h1{
 
 /*---------------- HEADER ----------------*/
 header{
+    width: 100vw;
     background-color: rgba(128, 128, 128, 0.141);
     padding: 20px;
     margin-bottom: 50px;
