@@ -1,8 +1,6 @@
 /* JavaScript para o header */
 
 const menu = document.querySelector('.burguer')
-// const listItem = document.querySelector('.new-list-item')
-
 menu.addEventListener('click', showMenu)
 
 
@@ -26,7 +24,6 @@ function showMenu() {
 /* JavaScript para mostrar o conteudo */
 
 const openContent = document.querySelector(".abrir-conteudo")
-// const show = document.querySelector(".mostrar")
 openContent.addEventListener('click', showContent)
 
 function showContent() {
@@ -38,7 +35,6 @@ function showContent() {
 }
 
 const openEmphasis = document.querySelector(".abrir-destaque")
-// const emphasis = document.querySelector(".mostrar-destaque")
 openEmphasis.addEventListener('click', showEmphasis)
 
 function showEmphasis() {
@@ -73,21 +69,4 @@ const newAreaDoCliente = document.querySelector('#new-nav-bar-form')
 newSobre.addEventListener('click', showContent)
 newAreaDoCliente.addEventListener('click', showForm)
 
-/* Mudar a foto */
-function mudarFoto() {
-    let foto = document.querySelector("#mudar-foto")
 
-    setTimeout(() => {
-        foto.src = "img/casa4.jpg"
-    }, 1000)
-
-}
-
-function voltarFoto() {
-    let foto = document.querySelector("#mudar-foto")
-
-    setTimeout(() => {
-        foto.src = "img/casa1.jpg"
-    }, 1000)
-
-}
