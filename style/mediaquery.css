@@ -158,6 +158,18 @@
 }
 
 @media screen and (max-width: 675px){
+    .fixed{
+        display: none;
+    }
+    
+    .bloco >img.remove{
+        display: none;
+    }
+    
+    .bloco > img.selected{
+        display: block;
+    }
+
     #remover2{
         display: none;
     }

@@ -147,6 +147,7 @@ section > .titulo{
     background-color:rgba(128, 128, 128, 0.141) ;
     border-radius: 0px 0px 5px 5px;
     animation: desceSecao .5s ease-in-out forwards;
+    
 }
 
 .container-flex-box > .bloco{
@@ -159,6 +160,18 @@ section > .titulo{
 
 .bloco > img{
     width: 100%;
+}
+
+.fixed{
+    display: block;
+}
+
+.bloco >img.remove{
+    display: none;
+}
+
+.bloco > img.selected{
+    display: none;
 }
 
 .bloco > p{

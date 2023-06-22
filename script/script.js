@@ -69,4 +69,40 @@ const newAreaDoCliente = document.querySelector('#new-nav-bar-form')
 newSobre.addEventListener('click', showContent)
 newAreaDoCliente.addEventListener('click', showForm)
 
+/* Alterar fotos na tela de celular */
+
+
+
+
+
+let imgs = document.querySelectorAll('.trocar img')
+console.log(imgs)
+// let img = document.querySelector('.selected')
+let currentImageIndex = 0
+let max = imgs.length
+
+function mudar(){
+    setInterval(()=> {
+        imgs[currentImageIndex].classList.remove('selected')
+        currentImageIndex++
+
+        if(currentImageIndex >= max){
+            currentImageIndex = 0
+        }
+
+        imgs[currentImageIndex].classList.add('selected')
+    }, 4000)
+}
+
+mudar()
+
+
+
+
+
+
+
+
+
+
 
